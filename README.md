@@ -1,29 +1,15 @@
-# The Black Ledger
+# The Black Ledger 2100
 
-A black, futuristic, scrollable website about documented Philippine political corruption records.
+A futuristic black-scroll archive about Philippine political corruption history, regional risk patterns, and source trails.
 
-## Files
-- `index.html` - main webpage
-- `styles.css` - black futuristic design
-- `app.js` - renders content from JSON
-- `data.json` - structured source-backed content
-- `Program.cs` - optional C# ASP.NET Core backend serving the static site and `/api/ledger`
+## Upload update to GitHub
 
-## Run as static site
-Open `index.html` through a local server, not by double-clicking, because browser fetch rules may block `data.json`.
+After replacing your old files with these files, run:
 
-Example:
-```bash
-python -m http.server 8000
+```powershell
+git add .
+git commit -m "Upgrade site design"
+git push
 ```
-Then open `http://localhost:8000`.
 
-## Run with C# backend
-Create a minimal ASP.NET Core web project, replace its `Program.cs`, and place the other files in the project root.
-
-```bash
-dotnet new web -n BlackLedger
-cd BlackLedger
-# copy index.html, styles.css, app.js, data.json, Program.cs here
-dotnet run
-```
+GitHub Pages will update automatically after about 1-3 minutes.

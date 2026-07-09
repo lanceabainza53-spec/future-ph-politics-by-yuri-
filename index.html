@@ -3,83 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Crocodiles of the PH</title>
+  <meta name="description" content="A futuristic black archive about documented Philippine political corruption cases, regional patterns, and credible source trails." />
+  <title>The Black Ledger 2100</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="grain"></div>
-  <header class="hero">
-    <nav>
-      <span class="brand">BLACK LEDGER</span>
-      <a href="#intro">Intro</a>
-      <a href="#cases">Cases</a>
-      <a href="#regions">Regions</a>
-      <a href="#sources">Sources</a>
+  <div class="scanline"></div>
+  <div class="progress" id="progress"></div>
+  <button class="top-button" id="toTop" aria-label="Back to top">↑</button>
+
+  <header class="hero" id="top">
+    <nav class="nav glass">
+      <a href="#top" class="brand"><span class="brand-mark">BL</span><span>The Black Ledger</span></a>
+      <div class="nav-links">
+        <a href="#intro">Intro</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#cases">Cases</a>
+        <a href="#regions">Regions</a>
+        <a href="#sources">Sources</a>
+      </div>
     </nav>
+
     <section class="hero-grid">
-      <div>
-        <p class="eyebrow">Future dictionary for public accountability</p>
-        <h1>Philippine political corruption, at its Finest By Yuri.</h1>
-        <p class="lede">A long-scroll archive using court records, audit summaries, watchdog data, and credible reporting. This Website is Created by yuri Кайзер.</p>
-        <div class="actions">
-          <a class="button" href="#intro">Start reading</a>
-          <a class="button ghost" href="#sources">Check sources</a>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">FUTURE ARCHIVE / 2100 INTERFACE</p>
+        <h1>Philippine corruption history, rendered like a dictionary from the future.</h1>
+        <p class="lead" id="disclaimer"></p>
+        <div class="hero-actions">
+          <a href="#cases" class="primary">Explore cases</a>
+          <a href="#regions" class="secondary">Read regional patterns</a>
         </div>
       </div>
-      <aside class="definition-card">
-        <span class="term">cor·rup·tion</span>
-        <p><b>noun.</b> Abuse of entrusted public power for private gain, often leaving citizens with broken roads, missing services, and the privilege of paying for the mess twice.</p>
-        <small>Scroll-built civic glossary. Updated from <span id="updated"></span>.</small>
+      <aside class="orb-card glass reveal">
+        <div class="orb" aria-hidden="true"></div>
+        <p class="mono">STATUS: PUBLIC ARCHIVE</p>
+        <h2 id="updated">Updated</h2>
+        <p>Built for scrolling, filtering, source checking, and quietly judging humanity's repetitive talent for misusing budgets.</p>
       </aside>
     </section>
   </header>
 
   <main>
-    <section id="intro" class="panel intro">
-      <p class="eyebrow">Introduction</p>
-      <h2>Why this archive exists</h2>
-      <p>This site is built as a scrollable public memory wall. It does not say every accused person is guilty. It separates convictions, charges, audit findings, asset recovery records, and ongoing investigations, because legal accuracy matters even when politics is acting like a badly written teleserye. Fuckyou marcos.</p>
-      <p id="disclaimer"></p>
-      <div id="stats" class="stats"></div>
+    <section class="section" id="intro">
+      <div class="section-head reveal">
+        <p class="eyebrow">INTRODUCTION</p>
+        <h2>Not gossip. Not a conviction machine. A source-first ledger.</h2>
+        <p>This site separates confirmed convictions, court records, official charges, audit findings, and ongoing investigations. The point is clarity, because public memory should not depend on whoever shouted loudest on Facebook at 2 AM.</p>
+      </div>
+      <div class="stats-grid" id="stats"></div>
     </section>
 
-    <section class="panel body-copy">
-      <p class="eyebrow">Body</p>
-      <h2>The pattern: money moves faster than accountability</h2>
-      <p>Philippine corruption stories often repeat the same structure: public funds are approved for development, the paperwork looks official, middlemen or friendly contractors appear, the project becomes weak, delayed, fake, overpriced, or invisible, and citizens are told to be patient. Very adorable system, if your hobby is losing tax money.</p>
-      <p>The point of this website is to make the record readable: who was convicted, who was charged, what institution handled the case, and what kind of public spending was involved.</p>
+    <section class="section split" id="timeline">
+      <div class="section-head sticky reveal">
+        <p class="eyebrow">BODY / TIMELINE</p>
+        <h2>Major national corruption markers</h2>
+        <p>A compressed trail of big Philippine corruption reference points, using cautious labels and source tags.</p>
+      </div>
+      <div class="timeline" id="timelineList"></div>
     </section>
 
-    <section id="timeline" class="panel">
-      <p class="eyebrow">Timeline</p>
-      <h2>Selected national corruption milestones</h2>
-      <div id="timelineList" class="timeline"></div>
+    <section class="section" id="cases">
+      <div class="section-head reveal">
+        <p class="eyebrow">CASE LEDGER</p>
+        <h2>Documented officials, cases, and corruption systems</h2>
+        <p>Search by name, category, region, status, or source. Type something like <b>PDAF</b>, <b>plunder</b>, <b>Ilocos</b>, or <b>infrastructure</b>.</p>
+      </div>
+      <div class="control-panel glass reveal">
+        <input id="search" type="search" placeholder="Search the archive..." autocomplete="off" />
+        <select id="regionFilter"><option value="all">All regions</option></select>
+        <select id="statusFilter"><option value="all">All statuses</option></select>
+        <button id="clearFilters">Clear</button>
+      </div>
+      <div class="case-grid" id="caseList"></div>
     </section>
 
-    <section id="cases" class="panel">
-      <p class="eyebrow">Called out / documented</p>
-      <h2>Major records and case clusters</h2>
-      <div id="caseList" class="cards"></div>
+    <section class="section split" id="regions">
+      <div class="section-head sticky reveal">
+        <p class="eyebrow">REGIONAL STORIES</p>
+        <h2>Every region has a different corruption risk pattern.</h2>
+        <p>These are not claims that every local official is corrupt. They are risk maps: public works, disaster funds, ports, mining, permits, and dynasty politics.</p>
+      </div>
+      <div class="region-stack" id="regionList"></div>
     </section>
 
-    <section id="regions" class="panel">
-      <p class="eyebrow">Regional stories</p>
-      <h2>Every region, every risk pattern</h2>
-      <p class="section-note">These regional entries describe documented governance risk patterns and historically relevant case connections. They are not saying all officials in a region are corrupt. Humanity has enough problems without inventing new libel.</p>
-      <div id="regionList" class="region-list"></div>
+    <section class="section" id="glossary">
+      <div class="section-head reveal">
+        <p class="eyebrow">MERRIAM-WEBSTER, BUT MAKE IT 2100</p>
+        <h2>Glossary of corruption terms</h2>
+        <p>Definitions for readers who want accuracy instead of vibes wrapped in angry typography.</p>
+      </div>
+      <div class="glossary-grid" id="glossaryList"></div>
     </section>
 
-    <section id="sources" class="panel sources-panel">
-      <p class="eyebrow">Sources</p>
-      <h2>Credible source trail</h2>
-      <p>Open the links, verify the claims, and distrust any political content that refuses sources. Especially the kind with dramatic music and font choices that scream “Facebook uncle discovered Canva.”</p>
-      <div id="sourceList" class="sources"></div>
+    <section class="section" id="sources">
+      <div class="section-head reveal">
+        <p class="eyebrow">SOURCE TRAIL</p>
+        <h2>Credible references used by this build</h2>
+        <p>Open these references before quoting the site like a courtroom wizard. Verification remains undefeated.</p>
+      </div>
+      <div class="source-list" id="sourceList"></div>
     </section>
   </main>
 
   <footer>
-    <p>Built for civic memory. Data loaded from JSON. Interface powered by JavaScript. Backend sample included in C#.</p>
+    <p>The Black Ledger 2100. Educational archive. Source labels matter. Due process matters. Public money matters more than everyone's excuses.</p>
   </footer>
+
   <script src="app.js"></script>
 </body>
 </html>

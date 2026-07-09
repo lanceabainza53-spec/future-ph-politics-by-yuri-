@@ -75,7 +75,9 @@
       "category": "Ill-gotten wealth recovery",
       "status": "Asset-recovery mandate and litigation history; not every listed asset claim has succeeded in court",
       "summary": "The Marcos case is the long shadow in Philippine anti-corruption history: not one clean courtroom ending, but decades of recovery actions, forfeiture cases, partial wins, dismissals, and political memory wars.",
-      "source": "PCGG / Supreme Court"
+      "source": "PCGG / Supreme Court",
+      "severity": "Legacy",
+      "keywords": "ferdinand marcos sr. / marcos-era asset recovery ilocos region / national ill-gotten wealth recovery asset-recovery mandate and litigation history; not every listed asset claim has succeeded in court"
     },
     {
       "name": "Joseph Estrada",
@@ -83,7 +85,9 @@
       "category": "Plunder",
       "status": "Convicted by Sandiganbayan in 2007; later pardoned",
       "summary": "The case remains one of the clearest examples of a former Philippine president being convicted for plunder by the anti-graft court.",
-      "source": "Supreme Court eLibrary"
+      "source": "Supreme Court eLibrary",
+      "severity": "Court-tested",
+      "keywords": "joseph estrada ncr / national plunder convicted by sandiganbayan in 2007; later pardoned"
     },
     {
       "name": "PDAF / Pork Barrel Scam",
@@ -91,7 +95,9 @@
       "category": "Public fund diversion / ghost projects",
       "status": "Multiple cases, convictions, acquittals, and pending histories depending on accused person",
       "summary": "This scandal turned congressional discretionary spending into a national keyword for fake NGOs, ghost projects, and development money that allegedly never reached communities.",
-      "source": "COA-related audit summaries / Ombudsman / Sandiganbayan"
+      "source": "COA-related audit summaries / Ombudsman / Sandiganbayan",
+      "severity": "Multi-actor",
+      "keywords": "pdaf / pork barrel scam national, multiple regions affected public fund diversion / ghost projects multiple cases, convictions, acquittals, and pending histories depending on accused person"
     },
     {
       "name": "Jinggoy Estrada PDAF case",
@@ -99,7 +105,9 @@
       "category": "Bribery / PDAF",
       "status": "Convicted of bribery counts in 2024; acquitted of plunder in that case",
       "summary": "A useful example of why labels matter: the case did not end as a plunder conviction, but did produce bribery convictions according to state reporting.",
-      "source": "Philippine News Agency"
+      "source": "Philippine News Agency",
+      "severity": "Recent",
+      "keywords": "jinggoy estrada pdaf case ncr / national bribery / pdaf convicted of bribery counts in 2024; acquitted of plunder in that case"
     },
     {
       "name": "Flood-control and infrastructure cases",
@@ -107,38 +115,181 @@
       "category": "Infrastructure procurement / alleged kickbacks",
       "status": "Ongoing investigations and recent charges reported in 2025–2026",
       "summary": "Flood-control corruption stories hit harder because the public sees the receipt in real life: floods, broken roads, half-built protection, and citizens paying twice, once in taxes and again in damage.",
-      "source": "Reuters / AP"
+      "source": "Reuters / AP",
+      "severity": "Ongoing",
+      "keywords": "flood-control and infrastructure cases multiple regions infrastructure procurement / alleged kickbacks ongoing investigations and recent charges reported in 2025–2026"
     }
   ],
   "regions": [
-    {"name":"NCR","theme":"National power and court visibility","story":"Metro Manila is where many national cases surface because the Senate, major agencies, Sandiganbayan, Ombudsman, and Supreme Court machinery are concentrated here. Corruption here often looks like national-budget control, procurement influence, and legal spectacle.","watch":"PDAF, national procurement, presidential and senatorial cases."},
-    {"name":"Ilocos Region","theme":"Dynasty memory and asset recovery","story":"The region is tied to the Marcos political legacy. The corruption history is mostly national in scale but regionally rooted through political identity, family power, and the unresolved public argument over recovered and unrecovered wealth.","watch":"Ill-gotten wealth narratives, dynasty politics, public memory."},
-    {"name":"Cagayan Valley","theme":"Infrastructure and local procurement risk","story":"Like many large agricultural and infrastructure regions, corruption risk often appears through roads, irrigation, disaster funds, and procurement. The lesson is not that every official is corrupt, but that thin oversight makes budget lines easy to hide behind.","watch":"Farm support, road works, disaster funds."},
-    {"name":"Central Luzon","theme":"Flood-control politics","story":"Central Luzon regularly appears in public concern over flood-control and infrastructure because geography makes floods expensive. Where water-control budgets grow, so does the need for audit trails.","watch":"Flood-control projects, contractors, DPWH-linked spending."},
-    {"name":"CALABARZON","theme":"Urban expansion and land-use pressure","story":"Fast growth creates opportunities for clean investment and dirty shortcuts. Zoning, permits, procurement, housing, and local business influence become pressure points.","watch":"Permits, land conversion, local procurement."},
-    {"name":"MIMAROPA","theme":"Resources and distance from central oversight","story":"Island governance makes monitoring harder. Ports, mining, tourism permits, and logistics spending can become corruption risks when public visibility is low.","watch":"Mining permits, port projects, tourism funds."},
-    {"name":"Bicol Region","theme":"Disaster money and public works","story":"Frequent typhoons mean repeated emergency spending. That is exactly when good governance matters most, because urgency can become an excuse to skip scrutiny.","watch":"Relief procurement, roads, evacuation projects."},
-    {"name":"Western Visayas","theme":"Infrastructure, ports, and city procurement","story":"Ports, tourism, and city-level procurement create both development and temptation. The clean version builds mobility; the corrupt version builds invoices.","watch":"Port upgrades, tourism infrastructure, city contracts."},
-    {"name":"Central Visayas","theme":"Urban growth and procurement density","story":"Cebu-centered development brings complex procurement networks. Corruption risk rises when growth moves faster than transparency.","watch":"Public-private deals, transport, local contracts."},
-    {"name":"Eastern Visayas","theme":"Disaster reconstruction oversight","story":"After major disasters, reconstruction money becomes a moral test. The region's history shows why relief, shelter, and road spending need traceable public records.","watch":"Rehabilitation funds, housing, emergency procurement."},
-    {"name":"Zamboanga Peninsula","theme":"Security, ports, and local contracts","story":"Security and logistics spending can be difficult for ordinary citizens to audit. That makes public documentation and procurement transparency more important.","watch":"Port works, security-related procurement, local bidding."},
-    {"name":"Northern Mindanao","theme":"Growth corridors and contractor politics","story":"As a logistics and growth corridor, public works become central. Every bridge and road project needs a paper trail citizens can inspect.","watch":"Roads, bridges, industrial-zone spending."},
-    {"name":"Davao Region","theme":"PDAF-linked case history and local power","story":"Davao del Sur appears in PDAF-related case history through former local officials and pork-barrel misuse proceedings. The broader regional issue is the concentration of political power and public spending oversight.","watch":"PDAF-linked cases, local procurement, infrastructure."},
-    {"name":"SOCCSKSARGEN","theme":"Agriculture and local development funds","story":"Agricultural support funds can be life-changing when clean and invisible when abused. Seeds, equipment, livelihood projects, and farm inputs need end-to-end tracking.","watch":"Agriculture projects, livelihood aid, procurement."},
-    {"name":"Caraga","theme":"Mining, roads, and resource governance","story":"Resource-rich areas face corruption risk around permits, royalties, enforcement, and road access. Oversight should follow both money and minerals.","watch":"Mining-related governance, roads, environmental permits."},
-    {"name":"BARMM","theme":"Autonomy and institution-building","story":"Autonomy makes governance reform possible, but also raises stakes for transparent institutions. Budget tracking matters because public trust is still being built.","watch":"Block grants, local institutions, procurement systems."},
-    {"name":"Cordillera Administrative Region","theme":"Resource governance and public works","story":"Mountain roads, mining questions, and local autonomy make the region sensitive to opaque contracts. Transparency protects both communities and land.","watch":"Road works, mining issues, indigenous community consultation."}
+    {
+      "name": "NCR",
+      "theme": "National power and court visibility",
+      "story": "Metro Manila is where many national cases surface because the Senate, major agencies, Sandiganbayan, Ombudsman, and Supreme Court machinery are concentrated here. Corruption here often looks like national-budget control, procurement influence, and legal spectacle.",
+      "watch": "PDAF, national procurement, presidential and senatorial cases."
+    },
+    {
+      "name": "Ilocos Region",
+      "theme": "Dynasty memory and asset recovery",
+      "story": "The region is tied to the Marcos political legacy. The corruption history is mostly national in scale but regionally rooted through political identity, family power, and the unresolved public argument over recovered and unrecovered wealth.",
+      "watch": "Ill-gotten wealth narratives, dynasty politics, public memory."
+    },
+    {
+      "name": "Cagayan Valley",
+      "theme": "Infrastructure and local procurement risk",
+      "story": "Like many large agricultural and infrastructure regions, corruption risk often appears through roads, irrigation, disaster funds, and procurement. The lesson is not that every official is corrupt, but that thin oversight makes budget lines easy to hide behind.",
+      "watch": "Farm support, road works, disaster funds."
+    },
+    {
+      "name": "Central Luzon",
+      "theme": "Flood-control politics",
+      "story": "Central Luzon regularly appears in public concern over flood-control and infrastructure because geography makes floods expensive. Where water-control budgets grow, so does the need for audit trails.",
+      "watch": "Flood-control projects, contractors, DPWH-linked spending."
+    },
+    {
+      "name": "CALABARZON",
+      "theme": "Urban expansion and land-use pressure",
+      "story": "Fast growth creates opportunities for clean investment and dirty shortcuts. Zoning, permits, procurement, housing, and local business influence become pressure points.",
+      "watch": "Permits, land conversion, local procurement."
+    },
+    {
+      "name": "MIMAROPA",
+      "theme": "Resources and distance from central oversight",
+      "story": "Island governance makes monitoring harder. Ports, mining, tourism permits, and logistics spending can become corruption risks when public visibility is low.",
+      "watch": "Mining permits, port projects, tourism funds."
+    },
+    {
+      "name": "Bicol Region",
+      "theme": "Disaster money and public works",
+      "story": "Frequent typhoons mean repeated emergency spending. That is exactly when good governance matters most, because urgency can become an excuse to skip scrutiny.",
+      "watch": "Relief procurement, roads, evacuation projects."
+    },
+    {
+      "name": "Western Visayas",
+      "theme": "Infrastructure, ports, and city procurement",
+      "story": "Ports, tourism, and city-level procurement create both development and temptation. The clean version builds mobility; the corrupt version builds invoices.",
+      "watch": "Port upgrades, tourism infrastructure, city contracts."
+    },
+    {
+      "name": "Central Visayas",
+      "theme": "Urban growth and procurement density",
+      "story": "Cebu-centered development brings complex procurement networks. Corruption risk rises when growth moves faster than transparency.",
+      "watch": "Public-private deals, transport, local contracts."
+    },
+    {
+      "name": "Eastern Visayas",
+      "theme": "Disaster reconstruction oversight",
+      "story": "After major disasters, reconstruction money becomes a moral test. The region's history shows why relief, shelter, and road spending need traceable public records.",
+      "watch": "Rehabilitation funds, housing, emergency procurement."
+    },
+    {
+      "name": "Zamboanga Peninsula",
+      "theme": "Security, ports, and local contracts",
+      "story": "Security and logistics spending can be difficult for ordinary citizens to audit. That makes public documentation and procurement transparency more important.",
+      "watch": "Port works, security-related procurement, local bidding."
+    },
+    {
+      "name": "Northern Mindanao",
+      "theme": "Growth corridors and contractor politics",
+      "story": "As a logistics and growth corridor, public works become central. Every bridge and road project needs a paper trail citizens can inspect.",
+      "watch": "Roads, bridges, industrial-zone spending."
+    },
+    {
+      "name": "Davao Region",
+      "theme": "PDAF-linked case history and local power",
+      "story": "Davao del Sur appears in PDAF-related case history through former local officials and pork-barrel misuse proceedings. The broader regional issue is the concentration of political power and public spending oversight.",
+      "watch": "PDAF-linked cases, local procurement, infrastructure."
+    },
+    {
+      "name": "SOCCSKSARGEN",
+      "theme": "Agriculture and local development funds",
+      "story": "Agricultural support funds can be life-changing when clean and invisible when abused. Seeds, equipment, livelihood projects, and farm inputs need end-to-end tracking.",
+      "watch": "Agriculture projects, livelihood aid, procurement."
+    },
+    {
+      "name": "Caraga",
+      "theme": "Mining, roads, and resource governance",
+      "story": "Resource-rich areas face corruption risk around permits, royalties, enforcement, and road access. Oversight should follow both money and minerals.",
+      "watch": "Mining-related governance, roads, environmental permits."
+    },
+    {
+      "name": "BARMM",
+      "theme": "Autonomy and institution-building",
+      "story": "Autonomy makes governance reform possible, but also raises stakes for transparent institutions. Budget tracking matters because public trust is still being built.",
+      "watch": "Block grants, local institutions, procurement systems."
+    },
+    {
+      "name": "Cordillera Administrative Region",
+      "theme": "Resource governance and public works",
+      "story": "Mountain roads, mining questions, and local autonomy make the region sensitive to opaque contracts. Transparency protects both communities and land.",
+      "watch": "Road works, mining issues, indigenous community consultation."
+    }
   ],
   "sources": [
-    {"title":"Sandiganbayan official site","url":"https://sb.judiciary.gov.ph/about/"},
-    {"title":"Supreme Court eLibrary: Estrada plunder case record","url":"https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/62632"},
-    {"title":"Supreme Court eLibrary: Jinggoy Estrada Ombudsman probable cause record","url":"https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/64524"},
-    {"title":"Philippine News Agency: Jinggoy Estrada acquitted of plunder, convicted of bribery","url":"https://www.pna.gov.ph/articles/1217245"},
-    {"title":"Transparency International: Philippines CPI profile","url":"https://www.transparency.org/en/countries/philippines"},
-    {"title":"Transparency International: CPI 2025 publication","url":"https://www.transparency.org/en/publications/corruption-perceptions-index-2025"},
-    {"title":"World Bank: Combating corruption in the Philippines","url":"https://documents.worldbank.org/en/publication/documents-reports/documentdetail/826151468776117170"},
-    {"title":"International Budget Partnership: COA and pork barrel audit case study","url":"https://internationalbudget.org/wp-content/uploads/ibp-audit-case-study-philippines-pork-barrel-2016.pdf"},
-    {"title":"FOI / PCGG agency page","url":"https://www.foi.gov.ph/agencies/pcgg/"},
-    {"title":"Reuters: Philippine cash withdrawal rules amid corruption crackdown","url":"https://www.reuters.com/world/asia-pacific/philippines-central-bank-tightens-rules-large-cash-withdrawals-amid-corruption-2025-09-19/"}
+    {
+      "title": "Sandiganbayan official site",
+      "url": "https://sb.judiciary.gov.ph/about/"
+    },
+    {
+      "title": "Supreme Court eLibrary: Estrada plunder case record",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/62632"
+    },
+    {
+      "title": "Supreme Court eLibrary: Jinggoy Estrada Ombudsman probable cause record",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/64524"
+    },
+    {
+      "title": "Philippine News Agency: Jinggoy Estrada acquitted of plunder, convicted of bribery",
+      "url": "https://www.pna.gov.ph/articles/1217245"
+    },
+    {
+      "title": "Transparency International: Philippines CPI profile",
+      "url": "https://www.transparency.org/en/countries/philippines"
+    },
+    {
+      "title": "Transparency International: CPI 2025 publication",
+      "url": "https://www.transparency.org/en/publications/corruption-perceptions-index-2025"
+    },
+    {
+      "title": "World Bank: Combating corruption in the Philippines",
+      "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/826151468776117170"
+    },
+    {
+      "title": "International Budget Partnership: COA and pork barrel audit case study",
+      "url": "https://internationalbudget.org/wp-content/uploads/ibp-audit-case-study-philippines-pork-barrel-2016.pdf"
+    },
+    {
+      "title": "FOI / PCGG agency page",
+      "url": "https://www.foi.gov.ph/agencies/pcgg/"
+    },
+    {
+      "title": "Reuters: Philippine cash withdrawal rules amid corruption crackdown",
+      "url": "https://www.reuters.com/world/asia-pacific/philippines-central-bank-tightens-rules-large-cash-withdrawals-amid-corruption-2025-09-19/"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Plunder",
+      "definition": "A high-value public-office corruption offense under Philippine law. This site labels a case as plunder only when the source record says so."
+    },
+    {
+      "term": "PDAF",
+      "definition": "Priority Development Assistance Fund, often called pork barrel, tied to major public fund diversion cases."
+    },
+    {
+      "term": "Sandiganbayan",
+      "definition": "The Philippines anti-graft court handling many corruption cases involving public officers."
+    },
+    {
+      "term": "COA",
+      "definition": "Commission on Audit, the constitutional body that audits public funds and public agencies."
+    },
+    {
+      "term": "PCGG",
+      "definition": "Presidential Commission on Good Government, created after 1986 to pursue recovery of alleged ill-gotten wealth."
+    },
+    {
+      "term": "Allegation vs Conviction",
+      "definition": "A case can be alleged, investigated, charged, acquitted, convicted, or pending. Those labels are not interchangeable, despite what comment sections pretend."
+    }
   ]
 }
