@@ -48,11 +48,15 @@
   background: rgba(255,255,255,0.14);
 }
 
-.site-credits {
-  padding: 90px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.site-credits{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.credits-card{
+    margin:0 auto;
 }
 
 .credits-card {
@@ -96,4 +100,9 @@
 .ig-follow:hover {
   transform: translateY(-2px);
   background: rgba(255,255,255,0.14);
+}
+
+footer{
+    display:flex;
+    justify-content:center;
 }
