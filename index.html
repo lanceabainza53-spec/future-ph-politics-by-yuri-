@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Crocodiles of the PH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="hero">
+    <nav>
+      <span class="brand">BLACK LEDGER</span>
+      <a href="#intro">Intro</a>
+      <a href="#cases">Cases</a>
+      <a href="#regions">Regions</a>
+      <a href="#sources">Sources</a>
+    </nav>
+    <section class="hero-grid">
+      <div>
+        <p class="eyebrow">Future dictionary for public accountability</p>
+        <h1>Philippine political corruption, at its Finest By Yuri.</h1>
+        <p class="lede">A long-scroll archive using court records, audit summaries, watchdog data, and credible reporting. This Website is Created by yuri Кайзер.</p>
+        <div class="actions">
+          <a class="button" href="#intro">Start reading</a>
+          <a class="button ghost" href="#sources">Check sources</a>
+        </div>
+      </div>
+      <aside class="definition-card">
+        <span class="term">cor·rup·tion</span>
+        <p><b>noun.</b> Abuse of entrusted public power for private gain, often leaving citizens with broken roads, missing services, and the privilege of paying for the mess twice.</p>
+        <small>Scroll-built civic glossary. Updated from <span id="updated"></span>.</small>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section id="intro" class="panel intro">
+      <p class="eyebrow">Introduction</p>
+      <h2>Why this archive exists</h2>
+      <p>This site is built as a scrollable public memory wall. It does not say every accused person is guilty. It separates convictions, charges, audit findings, asset recovery records, and ongoing investigations, because legal accuracy matters even when politics is acting like a badly written teleserye. Fuckyou marcos.</p>
+      <p id="disclaimer"></p>
+      <div id="stats" class="stats"></div>
+    </section>
+
+    <section class="panel body-copy">
+      <p class="eyebrow">Body</p>
+      <h2>The pattern: money moves faster than accountability</h2>
+      <p>Philippine corruption stories often repeat the same structure: public funds are approved for development, the paperwork looks official, middlemen or friendly contractors appear, the project becomes weak, delayed, fake, overpriced, or invisible, and citizens are told to be patient. Very adorable system, if your hobby is losing tax money.</p>
+      <p>The point of this website is to make the record readable: who was convicted, who was charged, what institution handled the case, and what kind of public spending was involved.</p>
+    </section>
+
+    <section id="timeline" class="panel">
+      <p class="eyebrow">Timeline</p>
+      <h2>Selected national corruption milestones</h2>
+      <div id="timelineList" class="timeline"></div>
+    </section>
+
+    <section id="cases" class="panel">
+      <p class="eyebrow">Called out / documented</p>
+      <h2>Major records and case clusters</h2>
+      <div id="caseList" class="cards"></div>
+    </section>
+
+    <section id="regions" class="panel">
+      <p class="eyebrow">Regional stories</p>
+      <h2>Every region, every risk pattern</h2>
+      <p class="section-note">These regional entries describe documented governance risk patterns and historically relevant case connections. They are not saying all officials in a region are corrupt. Humanity has enough problems without inventing new libel.</p>
+      <div id="regionList" class="region-list"></div>
+    </section>
+
+    <section id="sources" class="panel sources-panel">
+      <p class="eyebrow">Sources</p>
+      <h2>Credible source trail</h2>
+      <p>Open the links, verify the claims, and distrust any political content that refuses sources. Especially the kind with dramatic music and font choices that scream “Facebook uncle discovered Canva.”</p>
+      <div id="sourceList" class="sources"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for civic memory. Data loaded from JSON. Interface powered by JavaScript. Backend sample included in C#.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

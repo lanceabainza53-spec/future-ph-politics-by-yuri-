@@ -1,0 +1,79 @@
+:root {
+  --bg: #020204;
+  --panel: #08090d;
+  --panel-2: #101218;
+  --text: #f1f5f9;
+  --muted: #a4adbb;
+  --line: rgba(255,255,255,.12);
+  --glow: rgba(166, 203, 255, .24);
+  --hot: #d7e8ff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at 70% 0%, #101522 0%, var(--bg) 42%, #000 100%);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+  line-height: 1.7;
+}
+.grain {
+  position: fixed; inset: 0; pointer-events: none; opacity: .12; z-index: 5;
+  background-image: linear-gradient(transparent 50%, rgba(255,255,255,.03) 50%);
+  background-size: 100% 4px;
+}
+nav {
+  display: flex; gap: 22px; align-items: center; padding: 28px min(6vw, 72px);
+  position: sticky; top: 0; backdrop-filter: blur(14px); z-index: 10;
+  border-bottom: 1px solid var(--line); background: rgba(2,2,4,.72);
+}
+nav a { color: var(--muted); text-decoration: none; font-size: .9rem; }
+nav a:hover { color: white; }
+.brand { margin-right: auto; letter-spacing: .22em; font-weight: 800; font-size: .85rem; }
+.hero { min-height: 100vh; }
+.hero-grid {
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(290px, .55fr); gap: 42px;
+  padding: 110px min(6vw, 72px) 80px;
+}
+.eyebrow { color: var(--hot); text-transform: uppercase; letter-spacing: .18em; font-size: .74rem; font-weight: 800; }
+h1 { font-size: clamp(3rem, 8vw, 7.7rem); line-height: .92; letter-spacing: -.08em; margin: 12px 0 26px; max-width: 1100px; }
+h2 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.05em; margin: 8px 0 24px; }
+.lede { max-width: 780px; color: var(--muted); font-size: 1.15rem; }
+.actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+.button { border: 1px solid var(--line); color: #000; background: var(--text); padding: 12px 18px; border-radius: 999px; text-decoration: none; font-weight: 800; }
+.button.ghost { background: transparent; color: var(--text); }
+.definition-card, .panel {
+  border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.025));
+  box-shadow: 0 0 70px var(--glow); border-radius: 28px;
+}
+.definition-card { padding: 28px; align-self: end; position: sticky; top: 95px; }
+.term { display: block; font-family: Georgia, serif; font-size: 2.1rem; margin-bottom: 18px; }
+main { padding: 0 min(6vw, 72px) 80px; }
+.panel { padding: min(6vw, 70px); margin: 28px 0; }
+.panel p { color: var(--muted); max-width: 920px; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 34px; }
+.stat, .case-card, .region-card, .timeline-item, .source-card {
+  background: rgba(0,0,0,.34); border: 1px solid var(--line); border-radius: 20px; padding: 22px;
+}
+.stat strong { display: block; font-size: 2rem; letter-spacing: -.04em; }
+.stat span, small { color: var(--muted); }
+.timeline { display: grid; gap: 14px; }
+.timeline-item { display: grid; grid-template-columns: 120px 1fr; gap: 22px; }
+.year { font-size: 1.3rem; color: var(--hot); font-weight: 900; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.case-card h3, .region-card h3 { margin-top: 0; font-size: 1.35rem; }
+.badge { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; color: var(--hot); font-size: .76rem; margin: 0 8px 8px 0; }
+.region-list { columns: 2 360px; column-gap: 18px; }
+.region-card { break-inside: avoid; margin: 0 0 18px; }
+.sources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.source-card a { color: var(--text); text-decoration: none; }
+.source-card a:hover { text-decoration: underline; }
+footer { padding: 40px min(6vw, 72px); color: var(--muted); border-top: 1px solid var(--line); }
+.reveal { opacity: 0; transform: translateY(24px); transition: .7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+@media (max-width: 850px) {
+  nav { gap: 12px; overflow-x: auto; }
+  .hero-grid, .timeline-item, .cards, .stats, .sources { grid-template-columns: 1fr; }
+  .definition-card { position: static; }
+  h1 { font-size: clamp(2.6rem, 16vw, 4.8rem); }
+}
